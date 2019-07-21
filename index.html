@@ -1,33 +1,21 @@
 
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<style>
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .curve, .line {
-    fill: none;
-    stroke-width: 1px;
-  }
-  .curve {
-    stroke: red;
-    stroke-width: 3px;
-  }
-  .control {
-    fill: #ccc;
-    stroke: #000;
-    stroke-width: .5px;
-  }
-  .t, .controltext {
-    font-family: "Yanone Kaffeesatz";
-    font-weight: 400;
-    font-size: 1em;
-  }
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>bezier curve</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
 <body>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="./bezier.js"></script>
+    <div>
+        阶数：<input id="order" type="number" />
+    </div>
+    <div id="board"></div>
+    <div id="foot">create by TroyZh</div>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="./bezier.js"></script>
+</body>
+</html>
